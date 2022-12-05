@@ -1,0 +1,20 @@
+name: Crowdin Action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  crowdin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Crowdin sync
+        uses: crowdin/github-action@1.5.1
+        with:
+          upload_sources: true
+          upload_translations: false
+          config: '.github/crowdin.yml'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
