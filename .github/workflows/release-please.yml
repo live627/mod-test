@@ -8,7 +8,7 @@ jobs:
       FORCE_COLOR: 1
       MOD_NAME: custom-forms
     steps:
-      - uses: live627/release-please-action@main
+      - uses: google-github-actions/release-please-action@v3
         id: release
         with:
           release-type: php
