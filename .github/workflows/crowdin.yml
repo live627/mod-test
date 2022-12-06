@@ -3,13 +3,16 @@ name: Crowdin Action
 on:
   workflow_dispatch:
 
+env:
+  CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+  CROWDIN_API_TOKEN: ${{ secrets.CROWDIN_API_TOKEN }}
+
 jobs:
   crowdin:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
       - name: Crowdin sync
         uses: crowdin/github-action@1.5.1
         with:
