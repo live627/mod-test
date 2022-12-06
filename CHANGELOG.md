@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 This project adheres to [Semantic Versioning](http://semver.org/) as of v1.8.0.
 
+### [1.0.1](https://www.github.com/live627/mod-test/compare/v1.0.0...v1.0.1) (2022-12-06)
+
+
+### Bug Fixes
+
+* x ([6327e3f](https://www.github.com/live627/mod-test/commit/6327e3f7f62dd1a5881c19edf85274d153119e82))
+
 ## 1.0.0 (2022-12-06)
 
 
