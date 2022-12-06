@@ -15,7 +15,7 @@ if (file_exists(__DIR__ . '/SSI.php') && !defined('SMF'))
 	require_once __DIR__ . '/SSI.php';
 
 // Hmm... no SSI.php and no SMF?
-elseif (!defined('SMF'))
+elseif (!defined('SMF'))  
 	die('<b>Error:</b> Cannot install - please verify you put this in the same place as SMF\'s index.php.');
 
 $columns = [
